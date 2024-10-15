@@ -10,28 +10,14 @@
 </head>
 <body class="w-100 sans-serif bg-white">
 <main>
-
-<article class="center ph3 ph5-ns tc br2 pv5 cf">
-  <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
-    metaPhorest Zoom Meeting
-  </h1>
-  
-  <div class="fl w-100 pa1 mb3">
-    <div class="outline bg-white tc pa1" style="box-shadow: 10px 10px 0px black">
-      <h3 class="fw2 f3 lh-copy ma2">Local Time in Japan: <span id="time"></span> JST</h3>
-    </div>
-  </div>
+<article class="center ph3 ph5-ns tc br2 pv2 cf">
+  <h3 class="fw2 f3 lh-copy ma2"><span id="time"></span> JST</h3>
   <br />
   <br />
-  <div class="fl w-100 pa1">
-    <div class="outline bg-white tc pv4" style="box-shadow: 10px 10px 0px black">
-      <a class="f2 grow no-underline br-pill ph3 pv2 mb2 dib white bg-yellow" 
-        href="https://zoom.us/j/93571948104?pwd=Vmt4elhlTkNmQU9uVGdKOWI4STdNUT09">Join metaPhorest Zoom Meeting
-      </a>
-    </div>
-  </div>
+  <a class="f2 grow no-underline br-pill ph3 pv2 mb2 dib white" style="background: #2B663C;"
+    href="https://zoom.us/j/93571948104?pwd=Vmt4elhlTkNmQU9uVGdKOWI4STdNUT09">metaPhorest Zoom
+  </a>
 </article>
-
 </main>
 
 <script>
@@ -48,7 +34,6 @@ var f = new Intl.DateTimeFormat([], {
 var setTime = () => document.getElementById('time').innerHTML = f.format(new Date())
 setTime()
 setInterval(() => setTime(), 1000)
-
 
 </script>
 
